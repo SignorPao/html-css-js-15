@@ -6,3 +6,27 @@
   HEADER
 ==============================
 */
+header {
+  background-color: var(--cyprus);
+  color: var(--white);
+}
+
+/* Mobile Header Navigation */
+.header__nav-mobile {
+}
+
+.header__nav-mobile--container {
+}
+
+.header__nav-mobile--logo {
+}
+
+.header__nav-mobile--buttons {
+}
+/* End Mobile Header Navigation */
+
+/* PC Header Navigation */
+.header__nav-pc {
+  display: none;
+}
+/* End PC Header Navigation */
