@@ -17,6 +17,7 @@
   --font-5: "Manrope", sans-serif;
   --font-6: "Arimo", sans-serif;
   /* Length values */
+  --padding-inline: 16px;
   /* Other values */
 }
 

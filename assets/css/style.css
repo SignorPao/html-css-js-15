@@ -9,6 +9,7 @@
 header {
   background-color: var(--cyprus);
   color: var(--white);
+  height: 64px;
 }
 
 /* Mobile Header Navigation */
@@ -16,12 +17,29 @@ header {
 }
 
 .header__nav-mobile--container {
+  padding-inline: var(--padding-inline);
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.header__nav-mobile--logo-container {
+  display: inline-block;
+  height: 30px;
+}
+
+.header__nav-mobile--logo-link {
+  display: inline-block;
+  height: 30px;
 }
 
 .header__nav-mobile--logo {
+  height: 100%;
+  width: auto;
 }
 
 .header__nav-mobile--buttons {
+  /* max-width: 100%; */
 }
 /* End Mobile Header Navigation */
 
