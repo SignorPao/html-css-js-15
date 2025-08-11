@@ -14,22 +14,24 @@ header {
 
 /* Mobile Header Navigation */
 .header__nav-mobile {
+  height: 100%;
 }
 
 .header__nav-mobile--container {
+  height: 100%;
   padding-inline: var(--padding-inline);
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   /* justify-content: center; */
 }
 
 .header__nav-mobile--logo-container {
-  display: inline-block;
+  /* display: inline-block; */
   height: 30px;
 }
 
 .header__nav-mobile--logo-link {
-  display: inline-block;
+  /* display: inline-block; */
   height: 30px;
 }
 
@@ -39,8 +41,18 @@ header {
 }
 
 .header__nav-mobile--buttons {
-  /* max-width: 100%; */
+  max-width: 100%;
+  flex: 1 1 auto;
 }
+
+.header__nav-mobile--buttons ul {
+  /* max-width: 100%; */
+  display: flex;
+  /* margin-left: auto; */
+  justify-content: end;
+  column-gap: var(--column-gap);
+}
+
 /* End Mobile Header Navigation */
 
 /* PC Header Navigation */
