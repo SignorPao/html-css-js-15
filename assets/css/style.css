@@ -43,6 +43,7 @@ header {
 .header__nav-mobile--buttons {
   max-width: 100%;
   flex: 1 1 auto;
+  color: var(--white);
 }
 
 .header__nav-mobile--buttons ul {
@@ -53,6 +54,8 @@ header {
   column-gap: var(--column-gap);
 }
 
+.header__nav-mobile--buttons ul a {
+}
 /* End Mobile Header Navigation */
 
 /* PC Header Navigation */
@@ -60,3 +63,12 @@ header {
   display: none;
 }
 /* End PC Header Navigation */
+
+/* 
+==============================
+  MAIN
+==============================
+*/
+main {
+  height: 1000px;
+}
