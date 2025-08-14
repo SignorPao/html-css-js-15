@@ -47,6 +47,8 @@ header {
 }
 
 .header__nav-mobile--buttons ul {
+  color: var(--light-grey);
+  /* color: red; */
   /* max-width: 100%; */
   display: flex;
   /* margin-left: auto; */
@@ -61,8 +63,10 @@ header {
   gap: 12px;
 }
 
-.header__nav-mobile--buttons ul li a span{
-  font-size: 13px;
+.header__nav-mobile--buttons ul li a span {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing);
 }
 
 /* .search-link-wrapper {

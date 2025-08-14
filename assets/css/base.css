@@ -9,6 +9,7 @@
   --gold: #fed700;
   --cyprus: #002e3c;
   --white: #ffffff;
+  --light-grey: #dbe2e5;
   /* Fonts & Typography */
   --font-1: "Host Grotesk", sans-serif;
   --font-2: "M PLUS 1", sans-serif;
@@ -16,6 +17,12 @@
   --font-4: "Mulish", sans-serif;
   --font-5: "Manrope", sans-serif;
   --font-6: "Arimo", sans-serif;
+  --font-size-default: 1.6rem;
+  --font-size-small: 1.3rem;
+  --font-weight-default: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --letter-spacing: 1px;
   /* Length values */
   --padding-inline: 16px;
   --column-gap: 32px;
@@ -28,9 +35,9 @@
 ==============================
 */
 body {
-  font-family: var(--font-6);
-  /* font-size: 50px; */
-  /* font-weight: 700; */
+  font-family: var(--font-1);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
   font-optical-sizing: auto;
   font-style: normal;
 }
