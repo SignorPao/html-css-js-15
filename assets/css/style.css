@@ -22,16 +22,13 @@ header {
   padding-inline: var(--padding-inline);
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .header__nav-mobile--logo-container {
-  /* display: inline-block; */
   height: 30px;
 }
 
 .header__nav-mobile--logo-link {
-  /* display: inline-block; */
   height: 30px;
 }
 
@@ -48,25 +45,32 @@ header {
 
 .header__nav-mobile--buttons ul {
   color: var(--light-grey);
-  /* color: red; */
-  /* max-width: 100%; */
   display: flex;
-  /* margin-left: auto; */
   justify-content: end;
   column-gap: var(--column-gap);
 }
 
 .header__nav-mobile--buttons ul li a {
   height: 100%;
+  padding-block: 6px;
   display: flex;
   align-items: center;
   gap: 12px;
+  transition: var(--transition);
 }
 
 .header__nav-mobile--buttons ul li a span {
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing);
+}
+
+.header__nav-mobile--buttons ul li a:hover {
+  color: var(--white);
+}
+
+.header__nav-mobile--buttons ul li:hover a {
+  transform: translateY(-0.5rem);
 }
 
 /* .search-link-wrapper {

@@ -27,6 +27,7 @@
   --padding-inline: 16px;
   --column-gap: 32px;
   /* Other values */
+  --transition: 300ms ease-in-out;
 }
 
 /* 
