@@ -70,14 +70,33 @@ header {
 }
 
 .header__nav-mobile--buttons ul li:hover a {
-  transform: translateY(-0.5rem);
+  transform: translateY(-4px);
+}
+/* End Mobile Header Navigation */
+
+/* Mobile Header Menu */
+.header__nav-mobile--menu {
+  width: min(100%, 400px);
+  min-height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--cyprus);
+  will-change: transform;
+  transform: translateX(100%);
+  /* transform: translateX(0); */
+  /* transition: transform var(--transition); */
+  overflow-y: scroll;
+  /* z-index: var(--z-mobile-menu); */
 }
 
-/* .search-link-wrapper {
-  display: flex;
-  column-gap: var(--column-gap);
-} */
-/* End Mobile Header Navigation */
+.header__nav-mobile--menu-close {
+}
+
+.header__nav-mobile--menu-content {
+}
+/* End Mobile Header Menu */
 
 /* PC Header Navigation */
 .header__nav-pc {
