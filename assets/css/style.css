@@ -85,13 +85,36 @@ header {
   background-color: var(--cyprus);
   will-change: transform;
   transform: translateX(100%);
-  /* transform: translateX(0); */
-  /* transition: transform var(--transition); */
+  transition: transform var(--transition);
   overflow-y: scroll;
   /* z-index: var(--z-mobile-menu); */
 }
 
+.header__nav-mobile--menu.active {
+  transform: translateX(0);
+}
+
 .header__nav-mobile--menu-close {
+  padding-inline: var(--padding-inline);
+  background-color: var(--cyprus-light);
+  color: var(--light-grey);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#mob-menu-close {
+  padding-block: 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.mobile-menu-close-btn:hover #mob-menu-close {
+  color: var(--white);
+  transform: translateY(-4px);
 }
 
 .header__nav-mobile--menu-content {

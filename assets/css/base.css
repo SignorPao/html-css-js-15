@@ -8,6 +8,7 @@
   /* Colors */
   --gold: #fed700;
   --cyprus: #002e3c;
+  --cyprus-light: #103d4b;
   --white: #ffffff;
   --light-grey: #cfd7dbff;
   /* Fonts & Typography */
@@ -41,6 +42,10 @@ body {
   font-weight: var(--font-weight-default);
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 /* 
