@@ -10,6 +10,11 @@ header {
   background-color: var(--cyprus);
   color: var(--white);
   height: 64px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-header); */
 }
 
 /* Mobile Header Navigation */
@@ -76,7 +81,7 @@ header {
 
 /* Mobile Header Menu */
 .header__nav-mobile--menu {
-  width: min(100%, 400px);
+  width: min(100%, 465px);
   min-height: 100vh;
   position: fixed;
   right: 0;
@@ -87,7 +92,7 @@ header {
   transform: translateX(100%);
   transition: transform var(--transition);
   overflow-y: scroll;
-  /* z-index: var(--z-mobile-menu); */
+  z-index: var(--z-mobile-menu);
 }
 
 .header__nav-mobile--menu.active {
@@ -134,4 +139,21 @@ header {
 */
 main {
   height: 1000px;
+}
+
+/* 
+==============================
+  FOOTER
+==============================
+*/
+
+/* 
+==============================
+  MEDIA QUERIES
+==============================
+*/
+@media (min-width: 640px) {
+  :root {
+    --padding-inline: 32px;
+  }
 }

@@ -9,6 +9,7 @@
   --gold: #fed700;
   --cyprus: #002e3c;
   --cyprus-light: #103d4b;
+  --cyprus-overlay: #002e3cbd;
   --white: #ffffff;
   --light-grey: #cfd7dbff;
   /* Fonts & Typography */
@@ -29,6 +30,10 @@
   --column-gap: 32px;
   /* Other values */
   --transition: 300ms ease-in-out;
+  --transition-slow: 500ms ease;
+  --z-mobile-menu: 30;
+  --z-overlay: 20;
+  --z-header: 10;
 }
 
 /* 
@@ -44,9 +49,25 @@ body {
   font-style: normal;
 }
 
+/* body lock & overlay */
 body.lock {
   overflow: hidden;
 }
+
+.overlay__body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--transition-slow);
+  z-index: var(--z-overlay);
+}
+
+.overlay__body.active {
+  position: fixed;
+  height: 100vh;
+  background-color: var(--cyprus-overlay);
+}
+/* end body lock & overlay */
 
 /* 
 ==============================

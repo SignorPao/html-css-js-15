@@ -117,6 +117,7 @@
   </head>
   <body>
     <header>
+      <!-- Mobile header -->
       <nav class="header__nav-mobile">
         <div class="header__nav-mobile--container">
           <div class="header__nav-mobile--logo-container">
@@ -206,29 +207,32 @@
             <div class="mobile-menu-close-btn">
               <a href="#!" tabindex="0" id="mob-menu-close">
                 <svg
-                  fill="currentColor"
-                  width="22px"
-                  height="22px"
-                  id="menu"
+                  width="17px"
+                  height="17px"
+                  id="close"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="3 5 18 14"
+                  fill="currentColor"
+                  viewBox="5 5 14 14"
                 >
                   <path
-                    d="M4 6H20M4 12H20M4 18H20"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                    fill="currentColor"
                   />
                 </svg>
               </a>
             </div>
           </div>
-          <div class="header__nav-mobile--menu-content"></div>
+          <div class="header__nav-mobile--menu-content">content</div>
         </div>
       </nav>
+      <!-- PC header -->
       <nav class="header__nav-pc"></nav>
     </header>
+
+    <!-- Body overlay(when mobile menu is open) -->
+    <div class="overlay__body"></div>
 
     <main>
       <!-- Banner section -->
