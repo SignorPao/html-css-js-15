@@ -29,11 +29,12 @@
   --padding-inline: 16px;
   --column-gap: 32px;
   /* Other values */
-  --transition: 300ms ease-in-out;
-  --transition-slow: 500ms ease;
+  --timing: cubic-bezier(0.1, 0, 0, 1);
+  --time: 450ms;
+  --transition: var(--time) var(--timing);
   --z-mobile-menu: 30;
   --z-overlay: 20;
-  --z-header: 10;
+  /* --z-header: 10; */
 }
 
 /* 
@@ -58,11 +59,21 @@ body.lock {
   top: 0;
   left: 0;
   width: 100%;
-  transition: var(--transition-slow);
+  height: 100%;
+  transition: var(--transition);
   z-index: var(--z-overlay);
+
+  /* position: fixed; */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /* background-color: var(--cyprus-overlay); */
 }
 
 .overlay__body.active {
+  /* height: 100vh; */
+  /* opacity: 1; */
+  /* visibility: visible; */
+  
   position: fixed;
   height: 100vh;
   background-color: var(--cyprus-overlay);

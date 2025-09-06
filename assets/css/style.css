@@ -7,19 +7,27 @@
 ==============================
 */
 header {
-  background-color: var(--cyprus);
+  /* background-color: var(--cyprus);
   color: var(--white);
   height: 64px;
-  /* position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: var(--z-header); */
+  right: 0; */
+  /* isolation: isolate; */
+  /* z-index: var(--z-header); */
 }
 
 /* Mobile Header Navigation */
 .header__nav-mobile {
-  height: 100%;
+  /* height: 100%; */
+  background-color: var(--cyprus);
+  color: var(--white);
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__nav-mobile--container {
@@ -87,6 +95,7 @@ header {
   right: 0;
   top: 0;
   bottom: 0;
+  color: var(--white);
   background-color: var(--cyprus);
   will-change: transform;
   transform: translateX(100%);
@@ -107,6 +116,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: end;
+  box-shadow: 0 2px 4px -1px rgba(0, 37, 48, 0.72);
 }
 
 #mob-menu-close {
@@ -123,6 +133,7 @@ header {
 }
 
 .header__nav-mobile--menu-content {
+  height: 1000px;
 }
 /* End Mobile Header Menu */
 
