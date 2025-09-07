@@ -89,7 +89,7 @@ header {
 
 /* Mobile Header Menu */
 .header__nav-mobile--menu {
-  width: min(100%, 465px);
+  width: 100%;
   min-height: 100vh;
   position: fixed;
   right: 0;
@@ -166,5 +166,17 @@ main {
 @media (min-width: 640px) {
   :root {
     --padding-inline: 32px;
+  }
+
+  .header__nav-mobile--menu {
+    width: 50%;
+    min-width: 480px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__nav-mobile--menu {
+    min-width: 720px;
+    max-width: 1020px;
   }
 }
