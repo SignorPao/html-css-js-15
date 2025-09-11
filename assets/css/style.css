@@ -277,3 +277,27 @@ main {
     letter-spacing: var(--letter-spacing);
   }
 }
+
+@media (min-width: 1200px) {
+  .header__nav-mobile--menu-content {
+    margin-block: calc(var(--padding-base) * 5.25);
+  }
+
+  .mobile__navigation-block--top,
+  .mobile__navigation-block--middle,
+  .mobile__navigation-block--bottom {
+    padding-inline: calc(var(--padding-base) * 3.2);
+  }
+
+  .mobile__navigation-separator {
+    margin-inline: calc(var(--padding-base) * 3.2);
+  }
+
+  .mobile__navigation-block--top button {
+    line-height: var(--line-height-small);
+    font-size: calc(var(--font-size-default) * 1.45);
+  }
+}
+
+@media (min-width: 1450px) {
+}

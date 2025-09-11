@@ -29,6 +29,7 @@
   --font-weight-medium-plus: 600;
   --font-weight-bold: 700;
   --letter-spacing: 0.4px;
+  --line-height-small: 1.2;
   --line-height-medium: 1.5;
   /* Length values */
   --padding-base: 16px;
