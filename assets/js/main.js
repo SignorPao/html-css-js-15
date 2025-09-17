@@ -2,7 +2,9 @@ const burgerButton = document.getElementById("mob-menu-open"),
   closeButton = document.getElementById("mob-menu-close"),
   mobileMenu = document.querySelector(".header__nav-mobile--menu"),
   body = document.querySelector("body"),
-  overlay = document.querySelector(".overlay__body");
+  overlay = document.querySelector(".overlay__body"),
+  pcHeader = document.querySelector(".header__nav-pc--main-container"),
+  sticky = pcHeader.offsetTop;
 
 // mobile menu show / close
 burgerButton.addEventListener("click", () => {
@@ -17,13 +19,11 @@ closeButton.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-// const mobMenu = document.querySelectorAll(".mobile__menu"),
-//   mobileMenu = document.querySelector(".header__nav-mobile--menu"),
-//   body = document.querySelector("body"),
-//   overlay = document.querySelector(".overlay__body");
+window.onscroll = () => {
+  if (window.pageYOffset > sticky) {
+    pcHeader.classList.add("sticky");
+  } else {
+    pcHeader.classList.remove("sticky");
+  }
+};
 
-// mobMenu.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("active");
-//   body.classList.toggle("lock");
-//   overlay.classList.toggle("active");
-// });

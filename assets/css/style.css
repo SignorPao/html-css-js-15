@@ -6,9 +6,6 @@
   HEADER
 ==============================
 */
-header {
-}
-
 /* Mobile Header Navigation */
 .header__nav-mobile {
   background-color: var(--cyprus);
@@ -194,19 +191,13 @@ header {
 }
 /* End Mobile Header Menu */
 
-/* PC Header Navigation */
-.header__nav-pc {
-  display: none;
-}
-/* End PC Header Navigation */
-
 /* 
 ==============================
   MAIN
 ==============================
 */
 main {
-  height: 1000px;
+  height: 2000px;
 }
 
 /* 
@@ -300,4 +291,37 @@ main {
 }
 
 @media (min-width: 1450px) {
+  .header__nav-mobile {
+    display: none;
+  }
+
+  /* PC Header Menu */
+  .header__nav-pc--top-collapsible {
+    height: 64px;
+    background-color: var(--cyprus);
+    color: var(--white);
+    transition: var(--transition);
+  }
+  
+  .header__nav-pc--main-container {
+    height: 64px;
+    background-color: var(--cyprus);
+    color: var(--white);
+    transition: var(--transition);
+  }
+  
+  .sticky {
+    width: 100%;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    /* left: 0; */
+    /* right: 0; */
+    transition: var(--transition);
+  }
+  
+  .sticky + .main {
+    padding-top: 6px;
+  }
+  /* End PC Header Menu */
 }
