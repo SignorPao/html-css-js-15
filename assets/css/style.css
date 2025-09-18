@@ -302,26 +302,19 @@ main {
     color: var(--white);
     transition: var(--transition);
   }
-  
+
   .header__nav-pc--main-container {
     height: 64px;
     background-color: var(--cyprus);
     color: var(--white);
-    transition: var(--transition);
-  }
-  
-  .sticky {
-    width: 100%;
-    /* position: fixed; */
     position: sticky;
     top: 0;
-    /* left: 0; */
-    /* right: 0; */
-    transition: var(--transition);
   }
-  
-  .sticky + .main {
-    padding-top: 6px;
+
+  .sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
   }
   /* End PC Header Menu */
 }

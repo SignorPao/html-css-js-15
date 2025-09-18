@@ -19,6 +19,7 @@ closeButton.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
+// pc header collapse
 window.onscroll = () => {
   if (window.pageYOffset > sticky) {
     pcHeader.classList.add("sticky");
@@ -26,4 +27,3 @@ window.onscroll = () => {
     pcHeader.classList.remove("sticky");
   }
 };
-
