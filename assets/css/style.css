@@ -296,11 +296,18 @@ main {
   }
 
   /* PC Header Menu */
+  /* .header__nav-pc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  } */
+
   .header__nav-pc--top-collapsible {
     height: 64px;
     background-color: var(--cyprus);
     color: var(--white);
-    transition: var(--transition);
+    /* transition: var(--transition); */
   }
 
   .header__nav-pc--main-container {

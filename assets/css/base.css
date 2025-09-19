@@ -55,9 +55,10 @@ body {
   font-weight: var(--font-weight-default);
   font-optical-sizing: auto;
   font-style: normal;
-  /* overflow-wrap: anywhere; */
-  /* hyphens: auto; */
-  /* letter-spacing: var(--letter-spacing); */
+}
+
+* {
+  /* border: 1px solid red; */
 }
 
 /* body lock & overlay */
@@ -72,18 +73,9 @@ body.lock {
   height: 100%;
   transition: var(--transition);
   z-index: var(--z-overlay);
-
-  /* position: fixed; */
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  /* background-color: var(--cyprus-overlay); */
 }
 
 .overlay__body.active {
-  /* height: 100vh; */
-  /* opacity: 1; */
-  /* visibility: visible; */
-
   position: fixed;
   height: 100vh;
   background-color: var(--cyprus-overlay);
