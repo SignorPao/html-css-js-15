@@ -21,22 +21,19 @@ closeButton.addEventListener("click", () => {
 });
 
 // pc header collapse
-window.onscroll = () => {
-  if (window.pageYOffset > sticky) {
-    pcHeader.classList.add("sticky");
-  } else {
-    pcHeader.classList.remove("sticky");
-  }
-};
-
-
-
 
 // window.onscroll = () => {
-//   console.log(window.pageYOffset);
-//   if (window.pageYOffset > pcHeader.offsetTop) {
-//     pcNav.style.top = "-64px";
+//   if (window.pageYOffset > sticky) {
+//     pcHeader.classList.add("sticky");
 //   } else {
-//     pcNav.style.top = "0px";
+//     pcHeader.classList.remove("sticky");
 //   }
 // };
+
+window.onscroll = () => {
+  if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
+    pcNav.style.top = "-64px";
+  } else {
+    pcNav.style.top = "0px";
+  }
+};

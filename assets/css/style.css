@@ -197,6 +197,18 @@
 ==============================
 */
 main {
+  /* height: 2000px; */
+}
+
+.main {
+}
+
+.banner {
+  height: calc(100vh - 128px);
+  background: #2c5f64ff;
+}
+
+.conten-und-carten {
   height: 2000px;
 }
 
@@ -296,18 +308,29 @@ main {
   }
 
   /* PC Header Menu */
-  /* .header__nav-pc {
+  .header__nav-pc {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-  } */
+    height: 128px;
+    background-color: var(--cyprus);
+    color: var(--white);
+    transition: 0.2s;
+    /* transition: var(--transition); */
+  }
 
   .header__nav-pc--top-collapsible {
     height: 64px;
+  }
+  .header__nav-pc--main-container {
+    height: 64px;
+  }
+
+  /* .header__nav-pc--top-collapsible {
+    height: 64px;
     background-color: var(--cyprus);
     color: var(--white);
-    /* transition: var(--transition); */
   }
 
   .header__nav-pc--main-container {
@@ -316,12 +339,12 @@ main {
     color: var(--white);
     position: sticky;
     top: 0;
-  }
+  } */
 
-  .sticky {
+  /* .sticky {
     width: 100%;
     position: fixed;
     top: 0;
-  }
+  } */
   /* End PC Header Menu */
 }
