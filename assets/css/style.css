@@ -191,6 +191,11 @@
 }
 /* End Mobile Header Menu */
 
+/* PC Header Menu */
+.header__nav-pc {
+  display: none;
+}
+
 /* 
 ==============================
   MAIN
@@ -309,6 +314,7 @@ main {
 
   /* PC Header Menu */
   .header__nav-pc {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -318,6 +324,32 @@ main {
     color: var(--white);
     transition: 0.2s;
     /* transition: var(--transition); */
+    box-shadow: 0 2px 4px -1px rgba(0, 37, 48, 0.36);
+  }
+
+  .header__nav-pc--wrapper {
+    max-width: 1680px;
+    padding-inline: calc(var(--padding-base) * 2);
+    display: flex;
+    align-items: center;
+    justify-conten: center;
+  }
+
+  .header__nav-pc--logo-container {
+    height: 76px;
+    margin-inline-end: 48px;
+  }
+
+  .header__nav-pc--logo-link {
+    height: 100%;
+  }
+  
+  .header__nav-pc--logo {
+    height: 100%;
+  }
+
+  .header__nav-pc--buttons {
+    max-width: 100%;
   }
 
   .header__nav-pc--top-collapsible {
