@@ -5,7 +5,8 @@ const burgerButton = document.getElementById("mob-menu-open"),
   overlay = document.querySelector(".overlay__body"),
   pcHeader = document.querySelector(".header__nav-pc--main-container"),
   sticky = pcHeader.offsetTop,
-  pcNav = document.querySelector(".header__nav-pc");
+  pcNav = document.querySelector(".header__nav-pc"),
+  pcNavLogo = document.querySelector(".header__nav-pc--logo-container");
 
 // mobile menu show / close
 burgerButton.addEventListener("click", () => {
@@ -21,19 +22,17 @@ closeButton.addEventListener("click", () => {
 });
 
 // pc header collapse
-
-// window.onscroll = () => {
-//   if (window.pageYOffset > sticky) {
-//     pcHeader.classList.add("sticky");
-//   } else {
-//     pcHeader.classList.remove("sticky");
-//   }
-// };
-
 window.onscroll = () => {
   if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
     pcNav.style.top = "-64px";
+    pcNavLogo.style.translate = "0px 32px";
   } else {
     pcNav.style.top = "0px";
+    pcNavLogo.style.translate = "0px 0px";
+  }
+  if (window.pageYOffset > 32) {
+    pcNavLogo.style.transform = "scale(0.507692)";
+  } else {
+    pcNavLogo.style.transform = "scale(1)";
   }
 };
