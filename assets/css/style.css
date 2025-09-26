@@ -191,10 +191,11 @@
 }
 /* End Mobile Header Menu */
 
-/* PC Header Menu */
+/* PC Header Navigation */
 .header__nav-pc {
   display: none;
 }
+/* End PC Header Navigation */
 
 /* 
 ==============================
@@ -312,7 +313,7 @@ main {
     display: none;
   }
 
-  /* PC Header Menu */
+  /* PC Header Navigation */
   .header__nav-pc {
     display: block;
     position: fixed;
@@ -323,17 +324,16 @@ main {
     background-color: var(--cyprus);
     color: var(--white);
     transition: 0.2s;
-    /* transition: var(--transition); */
     box-shadow: 0 2px 4px -1px rgba(0, 37, 48, 0.36);
   }
 
   .header__nav-pc--wrapper {
     max-width: 1680px;
     height: 100%;
+    margin: 0 auto;
     padding-inline: calc(var(--padding-base) * 2);
     display: flex;
     align-items: center;
-    /* justify-content: center; */
   }
 
   .header__nav-pc--logo-container {
@@ -370,7 +370,43 @@ main {
     display: flex;
   }
 
+  .top-collapsible--left li {
+    padding-inline: var(--padding-small);
+    color: var(--medium-grey);
+    font-size: calc(var(--font-size-default) * 1.0625);
+    font-weight: var(--font-weight-medium-plus);
+    letter-spacing: calc(var(--letter-spacing) * 2);
+  }
+
+  .top-collapsible--left li:hover a {
+    color: var(--light-medium-grey);
+  }
+
   .top-collapsible--right {
+    display: flex;
+    column-gap: calc(var(--padding-base) * 2);
+    color: var(--light-grey);
+  }
+
+  .top-collapsible--right li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+  }
+
+  .top-collapsible--right li a span {
+    font-size: calc(var(--font-size-default) * 1.0625);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .top-collapsible--right li a:hover {
+    color: var(--white);
+  }
+
+  .top-collapsible--right li:hover a {
+    transform: translateY(-4px);
   }
 
   .header__nav-pc--main-container {
@@ -380,8 +416,21 @@ main {
   }
 
   .header__nav-pc--main-container ul {
+    padding-inline-start: var(--padding-small);
     display: flex;
     align-items: center;
+    column-gap: calc(var(--padding-base) * 2);
   }
-  /* End PC Header Menu */
+
+  .header__nav-pc--main-container li button {
+    font-weight: var(--font-weight-bold);
+    font-size: calc(var(--font-size-default) * 0.95);
+    letter-spacing: calc(var(--letter-spacing) * 1.5);
+    color: var(--light-grey);
+  }
+
+  .header__nav-pc--main-container li:hover button {
+    color: var(--light-light-grey);
+  }
+  /* End PC Header Navigation */
 }

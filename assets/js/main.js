@@ -31,8 +31,8 @@ window.onscroll = () => {
     pcNavLogo.style.translate = "0px 0px";
   }
   if (window.pageYOffset > 32) {
-    pcNavLogo.style.transform = "scale(0.507692)";
+    pcNavLogo.style.transform = "scale(0.59)";
   } else {
-    pcNavLogo.style.transform = "scale(1)";
+    pcNavLogo.style.transform = "scale(1.1)";
   }
 };
