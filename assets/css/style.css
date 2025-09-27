@@ -6,6 +6,10 @@
   HEADER
 ==============================
 */
+/* header {
+  height: 64px;
+} */
+
 /* Mobile Header Navigation */
 .header__nav-mobile {
   background-color: var(--cyprus);
@@ -203,19 +207,22 @@
 ==============================
 */
 main {
-  /* height: 2000px; */
+  /* display: block; */
 }
 
 .main {
 }
 
 .banner {
-  height: calc(100vh - 128px);
+  /* height: calc(100vh - 128px); */
+  /* height: calc(100vh - 64px); */
+  height: 100vh;
+  padding-top: 64px;
   background: #2c5f64ff;
 }
 
 .conten-und-carten {
-  height: 2000px;
+  height: 6000px;
 }
 
 /* 
@@ -309,6 +316,10 @@ main {
 }
 
 @media (min-width: 1450px) {
+  header {
+    height: 128px;
+  }
+
   .header__nav-mobile {
     display: none;
   }
@@ -323,7 +334,8 @@ main {
     height: 128px;
     background-color: var(--cyprus);
     color: var(--white);
-    transition: 0.2s;
+    transition: 0.1s;
+    /* transition: translate 0.9s; */
     box-shadow: 0 2px 4px -1px rgba(0, 37, 48, 0.36);
   }
 
@@ -433,4 +445,11 @@ main {
     color: var(--light-light-grey);
   }
   /* End PC Header Navigation */
+
+  .banner {
+    /* height: calc(100vh - 128px); */
+    /* height: calc(100vh - 64px); */
+    /* background: #2c5f64ff; */
+    padding-top: 128px;
+  }
 }
