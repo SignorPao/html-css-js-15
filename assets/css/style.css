@@ -218,6 +218,7 @@ main {
   /* height: calc(100vh - 64px); */
   height: 100vh;
   padding-top: 64px;
+  /* margin-top: 64px; */
   background: #2c5f64ff;
 }
 
@@ -447,9 +448,8 @@ main {
   /* End PC Header Navigation */
 
   .banner {
-    /* height: calc(100vh - 128px); */
-    /* height: calc(100vh - 64px); */
-    /* background: #2c5f64ff; */
     padding-top: 128px;
+    /* padding-top: 0px; */
+    /* margin-top: 128px; */
   }
 }
