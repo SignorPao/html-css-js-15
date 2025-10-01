@@ -222,6 +222,31 @@ main {
   background: #2c5f64ff;
 }
 
+.banner__container {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__content {
+  /* position: absolute; */
+  /* top: 0; */
+}
+.banner__content-title {
+}
+
 .conten-und-carten {
   height: 6000px;
 }
@@ -449,7 +474,5 @@ main {
 
   .banner {
     padding-top: 128px;
-    /* padding-top: 0px; */
-    /* margin-top: 128px; */
   }
 }
