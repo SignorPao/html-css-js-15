@@ -43,7 +43,7 @@
   --transition: var(--time) var(--timing);
   --z-mobile-menu: 30;
   --z-overlay: 20;
-  /* --z-header: 10; */
+  --z-header: 10;
 }
 
 /* 
