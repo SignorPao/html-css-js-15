@@ -246,6 +246,7 @@ main {
   object-fit: cover;
   /* scale: 1.1; */
   /* padding: 200px auto 0 auto; */
+  object-position: top;
 }
 
 .banner__image::after {
@@ -500,5 +501,9 @@ main {
 
   .banner {
     padding-top: 128px;
+  }
+
+  .banner__image img {
+    object-position: 50% 30%;
   }
 }
