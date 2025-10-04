@@ -37,6 +37,7 @@
   --padding-base: 16px;
   --padding-small: 10px;
   --column-gap: 32px;
+  --row-gap: 24px;
   /* Other values */
   --timing: cubic-bezier(0.1, 0, 0, 1);
   --time: 450ms;

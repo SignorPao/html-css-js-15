@@ -246,7 +246,8 @@ main {
   object-fit: cover;
   /* scale: 1.1; */
   /* padding: 200px auto 0 auto; */
-  object-position: top;
+  /* object-position: top; */
+  object-position: 50% 20%;
 }
 
 .banner__image::after {
@@ -268,9 +269,38 @@ main {
 
 .banner__content {
   position: absolute;
-  top: 0;
+  bottom: calc(var(--padding-base) * 2);
+  /* background: #ff7171ff; */
+  /* width: 270px; */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--row-gap);
 }
+
 .banner__content-title {
+  color: var(--white);
+}
+
+.banner__content-title h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--row-gap) / 1.8);
+}
+
+.banner__content-title h1 span {
+  text-align: center;
+}
+
+.banner__content-title--button {
+  color: var(--white);
+}
+
+.banner__scroller-button {
+  color: var(--white);
 }
 
 .conten-und-carten {
@@ -402,7 +432,7 @@ main {
   }
 
   .header__nav-pc--logo-container {
-    height: 100%;
+    /* height: 100%; */
     height: 76px;
     margin-inline-end: 48px;
     transition: transform 0.1s;
