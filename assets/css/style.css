@@ -274,7 +274,7 @@ main {
   /* width: 280px; */
   padding: 0 28px;
   margin: 0 auto;
-  width: calc(100% - 58px);
+  width: calc(100% - 30px);
   max-width: 480px;
   left: 50%;
   transform: translateX(-50%);
@@ -315,13 +315,14 @@ main {
   /* line-height: calc(var(--line-height-medium) * 2); */
   line-height: 40px;
   /* line-height: 1.5; */
-  letter-spacing: calc(var(--letter-spacing) * 4);
+  /* letter-spacing: calc(var(--letter-spacing) * 4); */
   /* font-weight: var(--font-weight-bold); */
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .banner__content-title--button {
-  color: var(--white);
+  color: black;
+  background-color: var(--gold);
 }
 
 .banner__scroller-button {
