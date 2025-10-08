@@ -274,7 +274,7 @@ main {
   /* width: 280px; */
   padding: 0 28px;
   margin: 0 auto;
-  width: calc(100% - 30px);
+  width: calc(100% - 50px);
   max-width: 480px;
   left: 50%;
   transform: translateX(-50%);
@@ -306,7 +306,8 @@ main {
   line-height: var(--line-height-medium);
   /* line-height: 28px; */
   /* line-height: 1.5; */
-  letter-spacing: var(--letter-spacing);
+  /* letter-spacing: var(--letter-spacing); */
+  letter-spacing: calc(var(--letter-spacing) * 2);
 }
 
 .banner__content-title h1 span:last-child {
@@ -315,14 +316,25 @@ main {
   /* line-height: calc(var(--line-height-medium) * 2); */
   line-height: 40px;
   /* line-height: 1.5; */
-  /* letter-spacing: calc(var(--letter-spacing) * 4); */
   /* font-weight: var(--font-weight-bold); */
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .banner__content-title--button {
   color: black;
   background-color: var(--gold);
+  height: 48px;
+  width: 100%;
+  max-width: 400px;
+  padding-inline: 24px;
+  border-radius: 1000px;
+}
+
+.banner__content-title--button span {
+  line-height: 20px;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing);
 }
 
 .banner__scroller-button {
