@@ -328,13 +328,18 @@ main {
   max-width: 400px;
   padding-inline: 24px;
   border-radius: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--row-gap) / 2);
 }
 
 .banner__content-title--button span {
   line-height: 20px;
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: calc(var(--letter-spacing) * 1.5);
 }
 
 .banner__scroller-button {
