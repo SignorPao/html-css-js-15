@@ -346,6 +346,15 @@ main {
   color: var(--white);
 }
 
+.arrow-wide {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-top: 2.4px solid var(--white);
+  border-right: 2.4px solid var(--white);
+  transform: rotate(135deg) skew(18deg, 18deg);
+}
+
 .conten-und-carten {
   height: 6000px;
 }
