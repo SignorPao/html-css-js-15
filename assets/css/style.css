@@ -352,7 +352,30 @@ main {
   height: 18px;
   border-top: 2.4px solid var(--white);
   border-right: 2.4px solid var(--white);
-  transform: rotate(135deg) skew(18deg, 18deg);
+  /* transform: rotate(135deg) skew(18deg, 18deg); */
+  /* animation: bouncey 1.2s ease-in infinite; */
+  animation: bounce alternate .5s ease-in infinite;
+}
+
+/* @keyframes bouncey {
+  0% {
+    transform: translateY(0) rotate(135deg) skew(18deg, 18deg);
+  }
+  50% {
+    transform: translateY(6px) rotate(135deg) skew(18deg, 18deg);
+  }
+  100% {
+    transform: translateY(0) rotate(135deg) skew(18deg, 18deg);
+  }
+} */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(135deg) skew(18deg, 18deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(135deg) skew(18deg, 18deg);
+  }
 }
 
 .conten-und-carten {
