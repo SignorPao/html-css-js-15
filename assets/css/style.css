@@ -270,7 +270,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--row-gap);
+  gap: calc(var(--row-gap) * 1.3);
 }
 
 .banner__content-title {
@@ -303,8 +303,8 @@ main {
 .banner__content-title--button {
   color: black;
   background-color: var(--gold);
-  height: 48px;
-  width: 100%;
+  height: calc(48px - 20px);
+  width: calc(100% - 20px);
   max-width: 400px;
   padding-inline: 24px;
   border-radius: 1000px;
@@ -314,14 +314,17 @@ main {
   justify-content: center;
   gap: calc(var(--row-gap) / 2);
   transition: all var(--transition);
+  outline: 12px solid var(--gold);
+  outline-offset: -1px;
 }
 
 .banner__content-title--button:hover {
   background-color: var(--gold-hover);
+  outline: 12px solid var(--gold-hover);
 }
 
 .banner__content-title--button:active {
-  transform: scale(0.95);
+  outline: 6px solid var(--gold);
 }
 
 .banner__content-title--button span {
