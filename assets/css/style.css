@@ -333,13 +333,7 @@ main {
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-medium);
   letter-spacing: calc(var(--letter-spacing) * 1.5);
-  /* transition: all var(--transition); */
 }
-/* 
-.banner__content-title--button:active span,
-.banner__content-title--button:active svg {
-  transform: scale(1.05);
-} */
 
 .banner__scroller-button {
   color: var(--white);
@@ -363,9 +357,21 @@ main {
   }
 }
 
-/* conten section */
+/* Conten & Carten section */
 .conten-und-carten {
-  height: 6000px;
+  /* margin-block: var(--section-margin); */
+}
+
+.conten-und-carten::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--medium-grey);
+  margin-top: var(--section-margin);
+}
+
+/* Sparen & Anlegen section */
+.sparen-und-anlegen {
+  /* margin-block: var(--section-margin); */
 }
 
 /* 

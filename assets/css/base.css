@@ -37,6 +37,8 @@
   /* Length values */
   --padding-base: 16px;
   --padding-small: 10px;
+  --section-padding: 28px;
+  --section-margin: 48px;
   --column-gap: 32px;
   --row-gap: 24px;
   /* Other values */
@@ -91,3 +93,7 @@ body.lock {
   REUSABLE CLASSES
 ==============================
 */
+.section__content {
+  padding-inline: var(--section-padding);
+  margin-block: var(--section-margin);
+}
