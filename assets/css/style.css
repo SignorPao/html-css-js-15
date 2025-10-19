@@ -357,15 +357,15 @@ main {
   }
 }
 
-/* Conten & Carten section */
-.conten-und-carten {
+/* Konten & Karten section */
+.konten-und-karten {
   /* margin-block: var(--section-margin); */
 }
 
-.conten-und-carten::after {
+.konten-und-karten::after {
   content: "";
   display: block;
-  border-bottom: 1px solid var(--medium-grey);
+  border-bottom: 1px solid var(--light-grey);
   margin-top: var(--section-margin);
 }
 
