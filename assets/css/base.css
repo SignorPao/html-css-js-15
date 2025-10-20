@@ -96,4 +96,7 @@ body.lock {
 .section__content {
   padding-inline: var(--section-padding);
   margin-block: var(--section-margin);
+  display: flex;
+  flex-direction: column;
+  gap: var(--row-gap);
 }
