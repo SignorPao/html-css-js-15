@@ -97,6 +97,8 @@ body.lock {
   padding-inline: var(--section-padding);
   margin-block: var(--section-margin);
   display: flex;
+  /* align-items: center; */
   flex-direction: column;
   gap: var(--row-gap);
+  /* text-align: center; */
 }
