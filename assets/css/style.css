@@ -369,6 +369,25 @@ main {
   margin-top: var(--section-margin);
 }
 
+.section__title span {
+  display: block;
+  text-align: center;
+}
+
+.section__title span:first-child {
+  font-size: calc(var(--font-size-default) * 0.938);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--letter-spacing);
+  color: var(--cyprus-title);
+}
+
+.section__title span:last-child {
+  font-size: calc(var(--font-size-default) * 1.69);
+  line-height: 40px;
+  font-weight: 900;
+  color: var(--cyprus-title-strong);
+}
+
 /* Sparen & Anlegen section */
 .sparen-und-anlegen {
   /* margin-block: var(--section-margin); */
