@@ -104,3 +104,32 @@ body.lock {
   gap: var(--row-gap);
   /* text-align: center; */
 }
+
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--row-gap);
+}
+
+.section__cards-card {
+  border: 1px solid var(--medium-grey);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card__img {
+}
+
+.card__txt {
+  margin: var(--padding-base);
+}
+.card__txt-text {
+}
+.card__txt-link {
+}
+.section__buttons {
+}
+.banner__content-title--button {
+}
+.cls-1 {
+}
