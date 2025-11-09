@@ -111,11 +111,15 @@ body.lock {
 .section__cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: var(--row-gap);
+  margin-bottom: 12px;
 }
 
 .section__cards-card {
+  max-width: 480px;
   border: 1px solid var(--medium-grey);
   border-radius: 16px;
   overflow: hidden;
@@ -188,6 +192,10 @@ body.lock {
 }
 
 .section__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .banner__content-title--button {
 }

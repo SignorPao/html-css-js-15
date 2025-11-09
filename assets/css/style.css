@@ -305,7 +305,7 @@ main {
   background-color: var(--gold);
   height: calc(48px - 20px);
   width: calc(100% - 20px);
-  max-width: 400px;
+  max-width: 460px;
   padding-inline: 24px;
   border-radius: 1000px;
   display: flex;
@@ -429,6 +429,21 @@ main {
   .banner__content-title--button {
     width: fit-content;
     padding-inline: 12px;
+  }
+
+  .section__cards {
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* row-gap: var(--row-gap); */
+    column-gap: var(--column-gap);
+  }
+
+  .section__cards-card {
+    /* width: calc((100% - 20px) / 2); */
+    width: calc((100% - 32px) / 2);
   }
 }
 
