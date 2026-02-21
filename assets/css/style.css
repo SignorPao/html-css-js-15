@@ -359,7 +359,14 @@ main {
   margin-block-start: 0;
 }
 
-.konten-und-karten::after {
+/* .konten-und-karten::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--light-grey);
+  margin-top: var(--section-margin);
+} */
+
+.section__content-wrapper::after {
   content: "";
   display: block;
   border-bottom: 1px solid var(--light-grey);
@@ -451,7 +458,7 @@ main {
   }
 }
 
-@media (min-width: 830px){
+@media (min-width: 830px) {
   .section__content {
     /* max-width: 768px; */
     /* margin-inline: auto; */
