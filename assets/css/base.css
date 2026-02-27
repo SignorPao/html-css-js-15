@@ -98,6 +98,7 @@ body.lock {
   REUSABLE CLASSES
 ==============================
 */
+/* Section classes */
 .section__content {
   padding-inline: var(--section-padding);
   margin-block: var(--section-margin);
@@ -105,8 +106,37 @@ body.lock {
   justify-content: center;
   flex-direction: column;
   gap: var(--row-gap);
-  /* max-width: 480px; */
-  /* margin-inline: auto; */
+}
+
+.section__content-wrapper {
+}
+
+.section__content-wrapper::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--light-grey);
+  margin-top: var(--section-margin);
+}
+
+.section__content_wrapper--inner {
+}
+
+.section__title span {
+  display: block;
+  text-align: center;
+}
+
+.section__title span:first-child {
+  font-size: calc(var(--font-size-default) * 0.938);
+  line-height: var(--line-height-medium);
+  letter-spacing: calc(var(--letter-spacing) * 2);
+  color: var(--cyprus-title);
+}
+
+.section__title span:last-child {
+  font-size: calc(var(--font-size-default) * 1.69);
+  line-height: 40px;
+  font-weight: 900;
 }
 
 .section__cards {
@@ -187,6 +217,8 @@ body.lock {
   align-items: center;
   justify-content: center;
 }
+
+/* End Section classes */
 
 .banner__content-title--button {
 }

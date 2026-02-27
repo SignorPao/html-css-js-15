@@ -366,14 +366,14 @@ main {
   margin-top: var(--section-margin);
 } */
 
-.section__content-wrapper::after {
+/* .section__content-wrapper::after {
   content: "";
   display: block;
   border-bottom: 1px solid var(--light-grey);
   margin-top: var(--section-margin);
-}
+} */
 
-.section__title span {
+/* .section__title span {
   display: block;
   text-align: center;
 }
@@ -389,7 +389,7 @@ main {
   font-size: calc(var(--font-size-default) * 1.69);
   line-height: 40px;
   font-weight: 900;
-}
+} */
 
 /* Sparen & Anlegen section */
 .sparen-und-anlegen {
