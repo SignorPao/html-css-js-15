@@ -100,8 +100,10 @@ body.lock {
 */
 /* Section classes */
 .section__content {
-  padding-inline: var(--section-padding);
-  margin-block: var(--section-margin);
+  padding-inline: 28px;
+  margin-block: 48px;
+  /* padding-inline: var(--section-padding); */
+  /* margin-block: var(--section-margin); */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -119,6 +121,10 @@ body.lock {
 }
 
 .section__content_wrapper--inner {
+}
+
+.section__title {
+  margin-block-end: 24px;
 }
 
 .section__title span {
@@ -146,7 +152,7 @@ body.lock {
   justify-content: center;
   flex-wrap: wrap;
   row-gap: var(--row-gap);
-  margin-bottom: 12px;
+  margin-block-end: 36px;
 }
 
 .section__cards-card {

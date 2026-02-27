@@ -355,8 +355,8 @@ main {
 
 /* Konten & Karten section */
 .konten-und-karten {
-  padding-block-start: 48px;
-  margin-block-start: 0;
+  /* padding-block-start: 48px; */
+  /* margin-block-start: 0; */
 }
 
 /* .konten-und-karten::after {
