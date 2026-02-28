@@ -101,7 +101,8 @@ body.lock {
 /* Section classes */
 .section__content {
   padding-inline: 28px;
-  margin-block: 48px;
+  margin-block-end: 48px;
+  padding-block-start: 48px;
   /* padding-inline: var(--section-padding); */
   /* margin-block: var(--section-margin); */
   display: flex;
