@@ -118,7 +118,7 @@ body.lock {
   content: "";
   display: block;
   border-bottom: 1px solid var(--light-grey);
-  margin-top: var(--section-margin);
+  margin-top: 60px;
 }
 
 .section__content_wrapper--inner {
