@@ -549,14 +549,20 @@ main {
   }
 }
 
-@media (min-width: 1110px){
+@media (min-width: 1110px) {
   .section__content_wrapper--inner {
     width: 1024px;
   }
 }
 
-@media (min-width: 1196px){
-  
+@media (min-width: 1196px) {
+  .section__content-wrapper {
+    width: 86%;
+  }
+
+  .section__content_wrapper--inner {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
