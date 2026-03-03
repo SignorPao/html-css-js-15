@@ -186,6 +186,7 @@ body.lock {
   flex-direction: column;
   row-gap: calc(var(--row-gap) / 3);
   margin-bottom: var(--padding-base);
+  hyphens: auto;
 }
 
 .card__txt-text a {
