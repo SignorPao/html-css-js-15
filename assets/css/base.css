@@ -149,8 +149,8 @@ body.lock {
 .section__cards {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   flex-wrap: wrap;
   row-gap: var(--row-gap);
   margin-block-end: 36px;
@@ -164,6 +164,8 @@ body.lock {
   cursor: pointer;
   transition: all var(--transition-fast);
   box-shadow: 0 2px 4px -1px rgba(0, 37, 48, 0.24);
+  display: flex;
+  flex-flow: column;
 }
 
 .section__cards-card:hover {
@@ -179,6 +181,10 @@ body.lock {
 
 .card__txt {
   margin: var(--padding-base);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  flex: 1 0 auto;
 }
 
 .card__txt-text {
@@ -211,6 +217,7 @@ body.lock {
   align-items: center;
   justify-content: start;
   gap: calc(var(--row-gap) / 2);
+  margin-top: auto;
 }
 
 .card__txt-link span {
