@@ -13,7 +13,8 @@
   --cyprus-overlay: #002e3cbd;
   --cyprus-separator-lane: #1d4856;
   --cyprus-title: #506c74;
-  /* --cyprus-title-strong: #002e3c; */
+  --cyprus-title-medium: #0e4d5e;
+  --cyprus-title-strong: #002e3c;
   --white: #ffffff;
   --light-light-grey: #e6eaedff;
   --light-grey: #cfd7dbff;
@@ -185,6 +186,7 @@ body.lock {
   flex-flow: column;
   justify-content: space-between;
   flex: 1 0 auto;
+  color: var(--cyprus-title-strong);
 }
 
 .card__txt-text {
@@ -196,22 +198,45 @@ body.lock {
 }
 
 .card__txt-text a {
-  font-size: calc(var(--font-size-default) * 1.188);
+  /* font-size: calc(var(--font-size-default) * 1.188); */
+  font-size: 18px;
   line-height: 28px;
   font-weight: 600;
   letter-spacing: var(--letter-spacing);
 }
 
 .card__txt-text p {
-  font-size: var(--font-size-default);
+  /* font-size: var(--font-size-default); */
+  font-size: 15px;
   line-height: var(--line-height-medium);
   letter-spacing: calc(var(--letter-spacing) / 2);
-  color: var(--cyprus-title);
+  font-weight: 100;
+}
+
+.card__txt-text b {
+  font-weight: 900;
+}
+
+.card__txt-text a.card__txt-text--inner-link {
+  font-size: 15px;
+  /* text-decoration: underline; */
+  border-bottom: 0.1px solid var(--cyprus-title);
+  /* padding-bottom: 2px; */
+}
+
+.card__txt-text sup {
+  font-size: 11px;
+}
+
+a.card__txt-text--inner-link:hover {
+  /* border-bottom: 2px solid var(--cyprus-title); */
 }
 
 .card__txt-link {
   display: inline-block;
-  color: black;
+  /* color: red; */
+  /* color: inherit; */
+  color: var(--cyprus-title-strong);
   display: flex;
   flex-direction: row;
   align-items: center;
