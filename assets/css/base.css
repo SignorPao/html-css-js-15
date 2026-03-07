@@ -20,6 +20,7 @@
   --light-grey: #cfd7dbff;
   --light-medium-grey: #abbac0;
   --medium-grey: #92a4ab;
+  --green: #008932;
   /* Fonts & Typography */
   --font-1: "Host Grotesk", sans-serif;
   --font-2: "M PLUS 1", sans-serif;
@@ -207,11 +208,8 @@ body.lock {
 .card__txt-text p {
   font-size: 15px;
   line-height: var(--line-height-medium);
-  /* letter-spacing: calc(var(--letter-spacing) / 2); */
   letter-spacing: 0.5px;
   font-weight: 100;
-  /* overflow-wrap: anywhere; */
-  /* hyphens: auto; */
 }
 
 .card__txt-text b {
@@ -229,6 +227,26 @@ body.lock {
 
 .card__txt-text sup {
   font-size: 10px;
+}
+
+.card__txt-text--list li {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  /* line-height: 24px; */
+}
+
+.card__txt-text--list_icon {
+  color: var(--green);
+ 
+}
+
+.card__txt-text--list_icon svg {
+}
+
+.card__txt-text--list li span {
 }
 
 .card__txt-link {
