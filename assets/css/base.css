@@ -233,20 +233,16 @@ body.lock {
   margin-bottom: 16px;
   display: flex;
   gap: 12px;
-  align-items: flex-start;
-  /* justify-content: flex-start; */
-  /* line-height: 24px; */
 }
 
-.card__txt-text--list_icon {
+.check{
   color: var(--green);
- 
-}
-
-.card__txt-text--list_icon svg {
+  width: 30px;
+  height: 30px;
 }
 
 .card__txt-text--list li span {
+  line-height: 24px;
 }
 
 .card__txt-link {
