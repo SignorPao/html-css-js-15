@@ -193,7 +193,8 @@ body.lock {
 .card__txt-text {
   display: flex;
   flex-direction: column;
-  row-gap: calc(var(--row-gap) / 3);
+  /* row-gap: calc(var(--row-gap) / 3); */
+  row-gap: 10px;
   margin-bottom: var(--padding-base);
   hyphens: auto;
 }
@@ -243,6 +244,11 @@ body.lock {
 
 .card__txt-text--list li span {
   line-height: 24px;
+}
+
+.card__txt-text--list li img {
+  width: 20px;
+  height: 20px;
 }
 
 .card__txt-link {
