@@ -193,7 +193,6 @@ body.lock {
 .card__txt-text {
   display: flex;
   flex-direction: column;
-  /* row-gap: calc(var(--row-gap) / 3); */
   row-gap: 10px;
   margin-bottom: var(--padding-base);
   hyphens: auto;
@@ -219,12 +218,12 @@ body.lock {
 
 .card__txt-text a.card__txt-text--inner-link {
   font-size: 15px;
-  box-shadow: 0 0.5px 0 var(--cyprus-title);
+  /* box-shadow: 0 0.5px 0 var(--cyprus-title); */
 }
 
-.card__txt-text a.card__txt-text--inner-link:hover {
+/* .card__txt-text a.card__txt-text--inner-link:hover {
   box-shadow: 0 1.5px 0 var(--cyprus-title);
-}
+} */
 
 .card__txt-text sup {
   font-size: 10px;

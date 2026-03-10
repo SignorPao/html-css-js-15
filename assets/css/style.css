@@ -570,6 +570,16 @@ main {
     width: calc((100% - 96px) / 4);
   }
 
+  .card__img img {
+    object-fit: cover;
+    height: 130px;
+    width: 100%;
+  }
+
+  .card__txt-text {
+    row-gap: 16px;
+  }
+
   .card__txt-text a {
     font-size: 22px;
     line-height: 32px;
