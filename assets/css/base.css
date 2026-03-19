@@ -282,7 +282,16 @@ body.lock {
 .section__buttons-double {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
+}
+
+#section__buttons-white {
+  background-color: white;
+  /* outline: 12px solid white; */
+  outline: 0;
+  border: 1px solid black;
+  padding-block: 24px;
+  width: 100%;
 }
 /* End Section classes */
 
