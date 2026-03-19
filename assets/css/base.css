@@ -235,7 +235,7 @@ body.lock {
   gap: 12px;
 }
 
-.check{
+.check {
   color: var(--green);
   width: 30px;
   height: 30px;
@@ -268,7 +268,7 @@ body.lock {
   letter-spacing: calc(var(--letter-spacing) * 1.5);
 }
 
-.arr-right{
+.arr-right {
   width: 26px;
   height: 22px;
 }
@@ -277,6 +277,12 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section__buttons-double {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 /* End Section classes */
 
