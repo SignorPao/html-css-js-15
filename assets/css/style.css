@@ -459,6 +459,17 @@ footer {
   .section__cards-card {
     width: calc((100% - 32px) / 2);
   }
+
+  .section__buttons-double {
+    flex-direction: row;
+  }
+
+  .section__buttons-double button {
+    width: fit-content !important;
+  }
+
+  #section__buttons-white {
+  }
 }
 
 @media (min-width: 830px) {
