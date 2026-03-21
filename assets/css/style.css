@@ -606,6 +606,13 @@ footer {
   .card__txt-link span {
     font-size: 15px;
   }
+
+  .section__cards-two > article {
+    min-width: calc(100% / 2 - 18px);
+  }
+  .section__cards-three > article {
+    min-width: calc(100% / 3 - 22px);
+  }
 }
 
 @media (min-width: 1110px) {
