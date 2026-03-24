@@ -395,6 +395,20 @@ main {
 .sparen-und-anlegen {
 }
 
+.sparen-und-anlegen .card__img {
+  /* height: 200px; */
+  height: 50vw;
+  /* overflow: hidden; */
+}
+
+.sparen-und-anlegen .card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+  /* object-position: center; */
+  /* transform: scale(0.8); */
+}
 /* 
 ==============================
   FOOTER
@@ -418,6 +432,10 @@ footer {
     max-width: 480px;
     margin-inline: auto;
     padding-inline: 0;
+  }
+
+  .sparen-und-anlegen .card__img {
+    height: 270px;
   }
 }
 
@@ -460,6 +478,11 @@ footer {
     width: calc((100% - 32px) / 2);
   }
 
+  .sparen-und-anlegen .card__img {
+    /* height: 160px; */
+    height: 24vw;
+  }
+
   .section__buttons-double {
     flex-direction: row;
   }
@@ -485,6 +508,10 @@ footer {
 
   .section__content_wrapper--inner {
     width: 768px;
+  }
+
+  .sparen-und-anlegen .card__img {
+    height: 207px;
   }
 }
 
@@ -610,8 +637,17 @@ footer {
   .section__cards-two > article {
     min-width: calc(100% / 2 - 18px);
   }
+
   .section__cards-three > article {
     min-width: calc(100% / 3 - 22px);
+  }
+
+  .sparen-und-anlegen .card__img {
+    height: 214px;
+  }
+
+  .section__cards-three .card__img {
+    height: 12.5vw;
   }
 }
 
@@ -671,6 +707,14 @@ footer {
 
   .banner__content-title h1 span:last-child {
     font-size: calc(var(--font-size-default) * 3.38);
+  }
+
+  .sparen-und-anlegen .card__img {
+    height: 17vw;
+  }
+
+  .section__cards-three .card__img {
+    height: 11vw;
   }
 }
 
