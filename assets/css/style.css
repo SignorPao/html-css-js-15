@@ -404,6 +404,17 @@ main {
   width: 100%;
   height: 100%;
 }
+
+/* Aktuelles & Tipps section */
+.aktuelles-und-tipps {
+  background: var(--light-grey-bg);
+}
+
+.kredit-und-finanzierung .section__content-wrapper::after,
+.aktuelles-und-tipps .section__content-wrapper::after {
+  /* border-bottom: 0px solid var(--light-grey); */
+  border-bottom: none;
+}
 /* 
 ==============================
   FOOTER
