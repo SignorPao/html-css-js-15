@@ -414,11 +414,17 @@ main {
 /* Aktuelles & Tipps section */
 .aktuelles-und-tipps {
   background: var(--light-grey-bg);
+  min-width: 100%;
+}
+
+.aktuelles-und-tipps .card__txt {
+  background: var(--white);
+  margin: 0;
+  padding: 16px;
 }
 
 .kredit-und-finanzierung .section__content-wrapper::after,
 .aktuelles-und-tipps .section__content-wrapper::after {
-  /* border-bottom: 0px solid var(--light-grey); */
   border-bottom: none;
 }
 /* 
