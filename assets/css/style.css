@@ -427,6 +427,24 @@ main {
 .aktuelles-und-tipps .section__content-wrapper::after {
   border-bottom: none;
 }
+
+.aktuelles-und-tipps--additional {
+}
+.aktuelles-und-tipps--additional__inner {
+}
+.additional-image {
+}
+.additional-image--wrapper {
+  /* display: block;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 192px;
+  width: 192px; */
+}
+.additional-text {
+}
 /* 
 ==============================
   FOOTER
