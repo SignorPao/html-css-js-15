@@ -430,8 +430,13 @@ main {
 
 .aktuelles-und-tipps--additional {
 }
+
 .aktuelles-und-tipps--additional__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
+
 .additional-image {
 }
 
@@ -467,9 +472,8 @@ main {
   letter-spacing: calc(var(--letter-spacing) * 2);
 }
 
-.additional-text b{
+.additional-text b {
   font-weight: 900;
-
 }
 /* 
 ==============================
@@ -490,7 +494,8 @@ footer {
     width: calc(100% - 50px);
   }
 
-  .section__content {
+  .section__content,
+  .aktuelles-und-tipps .section__content-wrapper {
     max-width: 480px;
     margin-inline: auto;
     padding-inline: 0;
@@ -528,10 +533,15 @@ footer {
     padding-inline: 12px;
   }
 
-  .section__content {
+  .section__content,
+  .aktuelles-und-tipps .section__content-wrapper {
     max-width: 768px;
     margin-inline: auto;
     padding-inline: var(--section-padding);
+  }
+
+  .aktuelles-und-tipps .section__content-wrapper {
+    padding-inline: 0;
   }
 
   .section__cards {
@@ -556,6 +566,14 @@ footer {
 
   .section__buttons-double button {
     width: fit-content !important;
+  }
+
+  .aktuelles-und-tipps .section__buttons {
+    justify-content: start;
+  }
+
+  .aktuelles-und-tipps .banner__content-title--button {
+    margin-inline-start: 12px;
   }
 
   #section__buttons-white {
