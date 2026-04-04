@@ -415,6 +415,7 @@ main {
 .aktuelles-und-tipps {
   background: var(--light-grey-bg);
   min-width: 100%;
+  padding-block-end: 60px;
 }
 
 .aktuelles-und-tipps .card__txt {
@@ -426,6 +427,10 @@ main {
 .kredit-und-finanzierung .section__content-wrapper::after,
 .aktuelles-und-tipps .section__content-wrapper::after {
   border-bottom: none;
+}
+
+.aktuelles-und-tipps .section__content-wrapper::after {
+  display: none;
 }
 
 .aktuelles-und-tipps--additional {
@@ -663,7 +668,8 @@ footer {
     font-size: calc(var(--font-size-small) * 1.15385);
   }
 
-  .section__content {
+  .section__content,
+  .aktuelles-und-tipps {
     max-width: 100%;
     padding-block-start: 72px;
     padding-inline: 28px;
@@ -735,6 +741,37 @@ footer {
 
   .section__cards-three .card__img {
     height: 12.5vw;
+  }
+
+  .aktuelles-und-tipps {
+    padding-block-end: 78px;
+  }
+
+  .aktuelles-und-tipps .section__content-wrapper {
+    max-width: 100%;
+    padding-inline: 0;
+  }
+
+  .aktuelles-und-tipps .section__cards {
+    margin-block-end: 32px;
+  }
+
+  .aktuelles-und-tipps--additional__inner {
+    /* display: flex; */
+    flex-direction: row;
+    /* gap: 24px; */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .additional-image {
+    order: 2;
+    width: calc((100% / 12) * 5 - ((32px * 7) / 12));
+  }
+
+  .additional-text {
+    order: 1;
+    width: calc((100% / 12) * 6 - ((32px * 6) / 12));
   }
 }
 
