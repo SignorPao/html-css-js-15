@@ -757,9 +757,7 @@ footer {
   }
 
   .aktuelles-und-tipps--additional__inner {
-    /* display: flex; */
     flex-direction: row;
-    /* gap: 24px; */
     justify-content: space-between;
     align-items: center;
   }
@@ -772,6 +770,24 @@ footer {
   .additional-text {
     order: 1;
     width: calc((100% / 12) * 6 - ((32px * 6) / 12));
+  }
+
+  .additional-text h3 span {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .additional-text h3 {
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .additional-text p {
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: calc(var(--letter-spacing) * 2);
   }
 }
 
@@ -806,6 +822,23 @@ footer {
   .section__title span:last-child {
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .additional-text h3 span {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .additional-text h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .additional-text p {
+    margin-bottom: 34px;
+    /* font-size: 17px; */
+    /* line-height: 28px; */
+    /* letter-spacing: calc(var(--letter-spacing) * 2); */
   }
 }
 
