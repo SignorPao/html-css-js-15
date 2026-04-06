@@ -425,7 +425,8 @@ main {
 }
 
 .kredit-und-finanzierung .section__content-wrapper::after,
-.aktuelles-und-tipps .section__content-wrapper::after {
+.aktuelles-und-tipps .section__content-wrapper::after,
+.die-bank .section__content-wrapper::after {
   border-bottom: none;
 }
 
@@ -479,6 +480,11 @@ main {
 
 .additional-text b {
   font-weight: 900;
+}
+
+/* Die Bank an Ihrer Seite section */
+.die-bank .section__title span {
+  color: var(--cyprus);
 }
 /* 
 ==============================
@@ -696,7 +702,7 @@ footer {
   }
 
   .section__cards {
-    margin-block-end: 44px;
+    margin-block-end: 32px;
   }
 
   .section__cards-card {
@@ -836,9 +842,6 @@ footer {
 
   .additional-text p {
     margin-bottom: 34px;
-    /* font-size: 17px; */
-    /* line-height: 28px; */
-    /* letter-spacing: calc(var(--letter-spacing) * 2); */
   }
 }
 
