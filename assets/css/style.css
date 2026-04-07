@@ -405,7 +405,8 @@ main {
 .konten-und-karten .card__img img,
 .sparen-und-anlegen .card__img img,
 .kredit-und-finanzierung .card__img img,
-.aktuelles-und-tipps .card__img img {
+.aktuelles-und-tipps .card__img img,
+.die-bank .card__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -515,7 +516,8 @@ footer {
   .konten-und-karten .card__img,
   .sparen-und-anlegen .card__img,
   .kredit-und-finanzierung .card__img,
-  .aktuelles-und-tipps .card__img {
+  .aktuelles-und-tipps .card__img,
+  .die-bank .card__img {
     height: 270px;
   }
 }
@@ -567,7 +569,8 @@ footer {
   .konten-und-karten .card__img,
   .sparen-und-anlegen .card__img,
   .kredit-und-finanzierung .card__img,
-  .aktuelles-und-tipps .card__img {
+  .aktuelles-und-tipps .card__img,
+  .die-bank .card__img {
     height: 24vw;
   }
 
@@ -607,7 +610,8 @@ footer {
   .konten-und-karten .card__img,
   .sparen-und-anlegen .card__img,
   .kredit-und-finanzierung .card__img,
-  .aktuelles-und-tipps .card__img {
+  .aktuelles-und-tipps .card__img,
+  .die-bank .card__img {
     height: 207px;
   }
 }
@@ -869,7 +873,8 @@ footer {
     font-size: calc(var(--font-size-default) * 3.38);
   }
 
-  .sparen-und-anlegen .card__img {
+  .sparen-und-anlegen .card__img,
+  .die-bank .card__img {
     height: 17vw;
   }
 
