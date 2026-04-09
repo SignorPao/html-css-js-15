@@ -492,6 +492,7 @@ main {
 .footnote {
   padding-bottom: 48px;
 }
+
 .footnote .section__content-wrapper::after {
   content: none;
 }
@@ -507,6 +508,7 @@ main {
   font-size: 11px;
   line-height: 18px;
   text-wrap: pretty;
+  letter-spacing: 0.2px;
 }
 /* 
 ==============================
@@ -820,6 +822,17 @@ footer {
     line-height: 28px;
     letter-spacing: calc(var(--letter-spacing) * 2);
   }
+
+  .footnote {
+    padding-bottom: 72px;
+  }
+
+  .footnote span,
+  .footnote p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
 }
 
 @media (min-width: 1110px) {
@@ -867,6 +880,10 @@ footer {
 
   .additional-text p {
     margin-bottom: 34px;
+  }
+
+  .footnote .section__content_wrapper--inner {
+    width: 880px;
   }
 }
 
