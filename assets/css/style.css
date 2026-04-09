@@ -487,6 +487,27 @@ main {
 .die-bank .section__title span {
   color: var(--cyprus);
 }
+
+/* Footnote */
+.footnote {
+  padding-bottom: 48px;
+}
+.footnote .section__content-wrapper::after {
+  content: none;
+}
+
+.footnote .section__content_wrapper--inner {
+  display: flex;
+  gap: 16px;
+}
+
+.footnote span,
+.footnote p {
+  color: var(--cyprus-title);
+  font-size: 11px;
+  line-height: 18px;
+  text-wrap: pretty;
+}
 /* 
 ==============================
   FOOTER
