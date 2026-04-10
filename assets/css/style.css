@@ -516,7 +516,8 @@ main {
 ==============================
 */
 footer {
-  padding: 40px;
+  padding: 0 28px;
+  background: var(--cyprus-title-strong);
 }
 
 /* 
