@@ -518,6 +518,7 @@ main {
 footer {
   padding: 0 28px;
   background: var(--cyprus-title-strong);
+  color: var(--light-grey);
 }
 
 /* 
