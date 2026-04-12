@@ -521,6 +521,27 @@ footer {
   color: var(--light-grey);
 }
 
+.footer__outlier-block {
+}
+.footer__contact-area {
+  background-color: var(--gold);
+  color: var(--cyprus);
+}
+.footer__contact-area--text {
+}
+.footer__contact-area--btn {
+}
+.footer__inner {
+}
+.footer__brandbar {
+}
+.footer__metabar {
+}
+.footer__metabar-navigation {
+}
+.footer__metabar-sociallinks {
+}
+
 /* 
 ==============================
   MEDIA QUERIES
