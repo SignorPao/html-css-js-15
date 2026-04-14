@@ -210,6 +210,7 @@ main {
 }
 
 .main {
+  margin-bottom: 64px;
 }
 
 /* banner section */
@@ -355,41 +356,7 @@ main {
 
 /* Konten & Karten section */
 .konten-und-karten {
-  /* padding-block-start: 48px; */
-  /* margin-block-start: 0; */
 }
-
-/* .konten-und-karten::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid var(--light-grey);
-  margin-top: var(--section-margin);
-} */
-
-/* .section__content-wrapper::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid var(--light-grey);
-  margin-top: var(--section-margin);
-} */
-
-/* .section__title span {
-  display: block;
-  text-align: center;
-}
-
-.section__title span:first-child {
-  font-size: calc(var(--font-size-default) * 0.938);
-  line-height: var(--line-height-medium);
-  letter-spacing: calc(var(--letter-spacing) * 2);
-  color: var(--cyprus-title);
-}
-
-.section__title span:last-child {
-  font-size: calc(var(--font-size-default) * 1.69);
-  line-height: 40px;
-  font-weight: 900;
-} */
 
 /* Sparen & Anlegen section */
 .sparen-und-anlegen {
@@ -519,20 +486,36 @@ footer {
   padding: 0 28px;
   background: var(--cyprus-title-strong);
   color: var(--light-grey);
+  position: relative;
 }
 
 .footer__outlier-block {
+  /* border-top: 64px solid var(--white); */
+  /* margin: 0 -28px; */
 }
+
 .footer__contact-area {
   background-color: var(--gold);
   color: var(--cyprus);
+  padding: 40px 16px;
+  border-radius: 16px;
+  margin-top: -64px;
+  position: absolute;
+  height: 221px;
+  width: calc(100% - 56px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .footer__contact-area--text {
 }
 .footer__contact-area--btn {
 }
+
 .footer__inner {
+  /* height: 300px; */
+  padding-top: 157px;
 }
+
 .footer__brandbar {
 }
 .footer__metabar {
