@@ -505,10 +505,70 @@ footer {
   width: calc(100% - 56px);
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .footer__contact-area--text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
-.footer__contact-area--btn {
+
+.footer__contact-area--btn ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* gap: 16px; */
+}
+
+.footer__contact-area--btn ul li {
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__contact-area--btn button {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.footer__contact-area--btn--wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 0.2px solid var(--cyprus); */
+  border-radius: 50%;
+  /* transition: var(--transition); */
+  border: none;
+  transition: all 300ms ease-in-out;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 0;
+  box-shadow: 0 0 0 1px var(--cyprus);
+}
+
+.footer__contact-area--btn button:hover .footer__contact-area--btn--wrapper {
+  box-shadow: 0 0 0 2px var(--cyprus);
+  /* border: 2px solid var(--cyprus); */
+}
+
+.footer__contact-area--btn--icon {
+  width: 24px;
+  height: 24px;
+  color: var(--cyprus);
+}
+
+.footer__contact-area--btn button div{
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .footer__inner {
