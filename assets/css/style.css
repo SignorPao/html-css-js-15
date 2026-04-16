@@ -819,7 +819,7 @@ footer {
   }
 
   .section__cards {
-    margin-block-end: 32px;
+    margin-block-end: 44px;
   }
 
   .section__cards-card {
@@ -852,6 +852,10 @@ footer {
 
   .section__cards-two > article {
     min-width: calc(100% / 2 - 18px);
+  }
+
+  .section__cards-three{
+    margin-block-end: 32px;
   }
 
   .section__cards-three > article {
