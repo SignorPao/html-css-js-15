@@ -485,7 +485,8 @@ main {
 footer {
   padding: 0 28px;
   background: var(--cyprus-title-strong);
-  color: var(--light-grey);
+  /* color: var(--light-grey); */
+  color: #dbe2e5;
   position: relative;
 }
 
@@ -592,7 +593,7 @@ footer {
 
 .footer__brandbar p {
   font-size: 13px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.5px;
   font-weight: 500;
   line-height: 28px;
 }
@@ -617,6 +618,7 @@ footer {
 .footer__metabar-navigation li {
   padding: 0 8px 8px 8px;
   font-size: 11px;
+  letter-spacing: 0.8px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -894,7 +896,7 @@ footer {
     gap: 38px;
   }
 
-  #section__buttons-white span{
+  #section__buttons-white span {
     font-size: 15px;
   }
 
