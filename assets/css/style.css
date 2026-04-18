@@ -612,7 +612,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .footer__metabar-navigation li {
@@ -637,6 +637,26 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.footer__metabar-sociallinks ul li {
+  padding: 12px 6px 0 6px;
+}
+
+.footer__metabar-sociallinks ul a {
+  padding: 2px;
+  width: 24px;
+  height: 24px;
+  transition: var(--transition);
+}
+
+.footer__metabar-sociallinks ul li:hover a {
+  color: var(--white);
+}
+
+.footer__metabar-sociallinks ul a svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* 
