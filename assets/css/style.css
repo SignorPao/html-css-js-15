@@ -670,7 +670,9 @@ footer {
   }
 
   .section__content,
-  .aktuelles-und-tipps .section__content-wrapper {
+  .aktuelles-und-tipps .section__content-wrapper,
+  .footer__contact-area,
+  .footer__inner {
     max-width: 480px;
     margin-inline: auto;
     padding-inline: 0;
@@ -754,6 +756,11 @@ footer {
   }
 
   #section__buttons-white {
+  }
+
+  .footer__contact-area,
+  .footer__inner {
+    max-width: 768px;
   }
 }
 
