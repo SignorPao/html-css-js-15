@@ -485,14 +485,11 @@ main {
 footer {
   padding: 0 28px;
   background: var(--cyprus-title-strong);
-  /* color: var(--light-grey); */
   color: #dbe2e5;
   position: relative;
 }
 
 .footer__outlier-block {
-  /* border-top: 64px solid var(--white); */
-  /* margin: 0 -28px; */
 }
 
 .footer__contact-area {
@@ -523,7 +520,6 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  /* gap: 16px; */
 }
 
 .footer__contact-area--btn ul li {
@@ -613,7 +609,6 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* margin-bottom: 24px; */
 }
 
 .footer__metabar-navigation li {
@@ -1053,6 +1048,14 @@ footer {
     letter-spacing: 0.7px;
     line-height: 20px;
   }
+
+  .footer__metabar-navigation li:first-child {
+    padding: 0 8px 0 0;
+  }
+
+  .footer__metabar-sociallinks ul li:last-child {
+    padding: 12px 0 0 6px;
+  }
 }
 
 @media (min-width: 1110px) {
@@ -1105,6 +1108,17 @@ footer {
   .footnote .section__content_wrapper--inner {
     width: 880px;
   }
+
+  .footer__contact-area {
+    /* width: calc(100% - 56px); */
+    /* max-width: 100%; */
+    max-width: calc(100% - 161px);
+  }
+
+  /* .footer__contact-area, */
+  .footer__inner {
+    max-width: calc(86% + 56px);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1138,6 +1152,11 @@ footer {
 
   .section__cards-three .card__img {
     height: 11vw;
+  }
+
+  .footer__contact-area,
+  .footer__inner {
+    /* max-width: calc(86% + 56px); */
   }
 }
 
@@ -1285,5 +1304,16 @@ footer {
 
   .banner__content-title--button:active {
     outline: 10px solid var(--gold-hover);
+  }
+
+  .footer__contact-area,
+  .footer__inner {
+    /* max-width: 1440px; */
+  }
+
+  .footer__contact-area {
+    /* width: calc(100% - 56px); */
+    /* max-width: 100%; */
+    max-width: calc(100% - 200px);
   }
 }
