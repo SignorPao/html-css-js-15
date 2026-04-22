@@ -1158,6 +1158,10 @@ footer {
   .footer__inner {
     /* max-width: calc(86% + 56px); */
   }
+
+  .footer__contact-area {
+    max-width: calc(100% - 200px);
+  }
 }
 
 @media (min-width: 1450px) {
@@ -1305,15 +1309,22 @@ footer {
   .banner__content-title--button:active {
     outline: 10px solid var(--gold-hover);
   }
+}
 
+@media (min-width: 1850px) {
+  .section__content,
+  .aktuelles-und-tipps .section__content-wrapper,
   .footer__contact-area,
   .footer__inner {
-    /* max-width: 1440px; */
+    max-width: 1440px;
+    padding-inline: 0;
+  }
+
+  .section__content-wrapper {
+    width: 100%;
   }
 
   .footer__contact-area {
-    /* width: calc(100% - 56px); */
-    /* max-width: 100%; */
-    max-width: calc(100% - 200px);
+    padding: 0 60px;
   }
 }
