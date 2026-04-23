@@ -655,6 +655,26 @@ footer {
   height: 100%;
 }
 
+.author {
+  padding: 24px 0;
+}
+
+.author p {
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--medium-grey);
+}
+
+.author a {
+  transition: var(--transition);
+}
+
+.author a:hover {
+  color: var(--white);
+  /* transition: var(--transition); */
+}
+
 /* 
 ==============================
   MEDIA QUERIES

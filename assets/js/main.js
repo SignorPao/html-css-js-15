@@ -36,3 +36,10 @@ window.onscroll = () => {
     pcNavLogo.style.transform = "scale(1.1)";
   }
 };
+
+// this year
+let timeContainer = document.querySelector(".author time"),
+  thisYear = new Date().getFullYear();
+if (thisYear > 2024) {
+  timeContainer.innerHTML = `2025 - ${thisYear}.`;
+}
