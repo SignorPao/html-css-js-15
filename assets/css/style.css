@@ -206,7 +206,6 @@
 ==============================
 */
 main {
-  /* display: block; */
 }
 
 .main {
@@ -672,7 +671,6 @@ footer {
 
 .author a:hover {
   color: var(--white);
-  /* transition: var(--transition); */
 }
 
 /* 
@@ -1130,12 +1128,9 @@ footer {
   }
 
   .footer__contact-area {
-    /* width: calc(100% - 56px); */
-    /* max-width: 100%; */
     max-width: calc(100% - 161px);
   }
 
-  /* .footer__contact-area, */
   .footer__inner {
     max-width: calc(86% + 56px);
   }
@@ -1176,7 +1171,6 @@ footer {
 
   .footer__contact-area,
   .footer__inner {
-    /* max-width: calc(86% + 56px); */
   }
 
   .footer__contact-area {

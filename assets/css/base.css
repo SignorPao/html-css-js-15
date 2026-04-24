@@ -104,10 +104,7 @@ body.lock {
 /* Section classes */
 .section__content {
   padding-inline: 28px;
-  /* margin-block-end: 48px; */
   padding-block-start: 48px;
-  /* padding-inline: var(--section-padding); */
-  /* margin-block: var(--section-margin); */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -152,8 +149,6 @@ body.lock {
 .section__cards {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
   flex-wrap: wrap;
   row-gap: var(--row-gap);
   margin-block-end: 36px;
@@ -219,12 +214,7 @@ body.lock {
 
 .card__txt-text a.card__txt-text--inner-link {
   font-size: 15px;
-  /* box-shadow: 0 0.5px 0 var(--cyprus-title); */
 }
-
-/* .card__txt-text a.card__txt-text--inner-link:hover {
-  box-shadow: 0 1.5px 0 var(--cyprus-title);
-} */
 
 .card__txt-text sup {
   font-size: 10px;
@@ -294,7 +284,6 @@ body.lock {
   color: black;
   background-color: white;
   outline: 0;
-  /* border: 1px solid black; */
   border: none;
   transition: all 300ms ease-in-out;
   transition-property: box-shadow;
